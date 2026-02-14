@@ -173,6 +173,18 @@ a {
     border-radius: 7px;
 }
 
+.bottom-border {
+    border-bottom: 1px solid #ccc;
+}
+
+.padding-top {
+    padding-top: 10px;
+}
+
+.padding-bottom {
+    padding-bottom: 10px;
+}
+
 
 .trending {
     grid-area: 3/2/4/3;
