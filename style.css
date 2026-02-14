@@ -24,6 +24,7 @@ body {
     line-height: 1.5;
     /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
+    background-color: #0e0e0e;
 }
 
 /* 6. Improve media defaults */
@@ -83,6 +84,7 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
+    margin-top: 130px;
 
 }
 
@@ -130,4 +132,55 @@ a {
 .main-content {
     background-color: darkgray;
     grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 30px 1fr 1fr;
+    padding: 20px;
+
+}
+
+.main-content h3 {
+    grid-area: 1/1/2/2;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-area: 2/1/4/2;
+    gap: 30px;
+    margin-right:20px;
+}
+
+.projects div {
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 7px;
+
+}
+
+.feed {
+    grid-area: 1/2/3/3;
+}
+
+.feed h3 {
+    height: 30px;
+}
+
+.feed-info {
+    font-size: 12px;
+    background-color: blanchedalmond;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+
+.trending {
+    grid-area: 3/2/4/3;
+    padding-top: 20px;
+}
+
+.trending-links{
+    background-color: brown;
+    padding: 20px;
+    border-radius: 7px;
 }
