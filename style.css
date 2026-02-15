@@ -91,14 +91,38 @@ h6 {
 .sidebar {
     background-color: aqua;
     grid-row: 1/3;
+    padding-left: 20px;
 }
 
-.sidebar div {
+.user-func,
+.user-controls {
     padding-top: 40px;
 }
 
-li {
+.user-func img,
+.user-controls img,
+.search-bar img,
+.prof-pic img:first-child {
+    width: 22px;
+    height: 22px;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 5px;
     list-style-type: none;
+    font-size: 22px;
+}
+
+.sidebar li {
+    list-style-type: none;
+    font-size: 22px;
 }
 
 .header {
@@ -118,7 +142,7 @@ li {
 .links div {
     width: 90px;
     height: 36px;
-    border-radius: 10px;
+    border-radius: 22px;
     background-color: cadetblue;
     text-align: center;
     padding-top: 5px;
@@ -148,7 +172,7 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-area: 2/1/4/2;
     gap: 30px;
-    margin-right:20px;
+    margin-right: 20px;
 }
 
 .projects div {
@@ -191,8 +215,27 @@ a {
     padding-top: 20px;
 }
 
-.trending-links{
+.trending-links {
     background-color: brown;
     padding: 20px;
     border-radius: 7px;
+}
+
+.trending-links>div{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 5px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.grettings img{
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
 }
